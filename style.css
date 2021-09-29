@@ -163,8 +163,13 @@
 }
 
 .content {
-    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    height: 100px;
+    justify-content: space-between;
 }
+
 
 .content .name__item h3{
     padding: 5px 0px;
@@ -193,6 +198,7 @@
 .content .price__rating .rating .grey{
     color: rgb(194, 194, 187);
 }
+
 
 .paginate {
     text-align: center;
