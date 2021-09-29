@@ -1,14 +1,14 @@
+
 let list = document.querySelectorAll(".navi");
 let itemBox = document.querySelectorAll(".list__item");
 
-for (let i = 0; i < list.length; i++) {
-
-    list[i].addEventListener("click", function () {
-        for (let j = 0; j < list.length; j++) {
-            console.log("Hello");
-            list[j].classList.remove("active");
+for(let i = 0; i < list.length; i++){
+    list[i].addEventListener('click', function() {
+            for(let j = 0; j < list.length; j++){
+                list[j].classList.remove("active");
         }
         this.classList.add("active");
+
         let dataFilter = this.getAttribute("data-filter");
 
         for (let k = 0; k < itemBox.length; k++) 
@@ -24,8 +24,8 @@ for (let i = 0; i < list.length; i++) {
             }
         }
     });
-    
 }
+
 const buttonsPagination = document.querySelectorAll(".page > li");
 for (let i = 0; i < buttonsPagination.length; i++) {
     buttonsPagination[i].addEventListener("click", function () {
